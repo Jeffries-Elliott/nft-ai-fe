@@ -1,16 +1,16 @@
 "use client"
 
-import {config} from "@/utils/wagmi";
+import { config } from "@/utils/wagmi";
 import theme from "@/utils/theme";
-import {WagmiProvider} from "wagmi";
-import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
-import {ThemeProvider} from "@mui/material/styles";
+import { WagmiProvider } from "wagmi";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
+import { ThemeProvider } from "@mui/material/styles";
 
 const queryClient = new QueryClient();
 
 export default function Providers({
- children,
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
@@ -26,4 +26,3 @@ export default function Providers({
     </AppRouterCacheProvider>
   );
 }
-
