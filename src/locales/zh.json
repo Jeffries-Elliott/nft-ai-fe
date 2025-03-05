@@ -7,5 +7,20 @@
   "Dark mode": "夜间模式",
   "Light mode": "明亮模式",
   "Switch to Chinese": "切换中文",
-  "Switch to English": "切换英文"
+  "Switch to English": "切换英文",
+  "Log out": "退出",
+  "Auction History": "拍卖历史",
+  "Favorites": "收藏品",
+  "Bid History": "出价记录",
+  "Search": "搜索",
+  "Status": "状态",
+  "All": "全部",
+  "Active": "活跃",
+  "Ending Soon": "即将到期",
+  "Inactive": "非活跃",
+  "Name": "名称",
+  "Quantity": "数量",
+  "Collection": "集合",
+  "Price": "价格",
+  "Floor Price Diff": "地板价差异"
 }

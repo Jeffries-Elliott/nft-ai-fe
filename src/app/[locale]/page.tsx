@@ -13,7 +13,7 @@ export default function Home() {
   const {data: balance} = useBalance({address})
 
   return (
-    <Container maxWidth={false} sx={{ minHeight: '100vh', py: 4 }}>
+    <Container maxWidth={false} sx={{ minHeight: '100vh', paddingTop: 2 }}>
       <PageBackground imageUrl="https://picsum.photos/600/300?1" />
 
       <Grid container spacing={2}>

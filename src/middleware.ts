@@ -1,7 +1,22 @@
 import createMiddleware from 'next-intl/middleware';
 import {routing} from './i18n/routing';
+import {NextRequest, NextResponse} from "next/server";
 
-export default createMiddleware(routing);
+const authRoutes = ['profile'];
+
+export default async function middleware(request: NextRequest) {
+  const [, , ...segments] = request.nextUrl.pathname.split('/');
+  const isAuthed = true;
+  if (authRoutes.includes(segments.join('/')) && !isAuthed) {
+    return NextResponse.redirect(new URL('/login', request.url));
+  }
+
+  const handleI18nRouting = createMiddleware(routing);
+  const response = handleI18nRouting(request);
+
+  return response;
+}
+
 
 export const config = {
   matcher: [

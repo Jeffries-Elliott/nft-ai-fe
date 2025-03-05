@@ -7,7 +7,7 @@ import Container from '@mui/material/Container';
 import ConnectWalletButton from "@/app/[locale]/_components/Header/ConnectWalletButton";
 import NavBar from "@/app/[locale]/_components/Header/NavBar";
 import IconButton from '@mui/material/IconButton';
-import SearchIcon from '@mui/icons-material/Search';
+// import SearchIcon from '@mui/icons-material/Search';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import useFontColor from '../hooks/useFontColor';
 import UserMenu from './UserMenu';
@@ -22,6 +22,7 @@ export default function Header() {
       sx={[
         {
           height: 64,
+          justifyContent: 'center',
           bgcolor: trigger ? '#ffffff' : 'transparent',
           borderBottom: "1px solid",
           borderBottomColor: trigger ? "rgba(18, 18, 18, 0.08)" : 'transparent',
@@ -46,12 +47,12 @@ export default function Header() {
           }}
         >
           <NavBar />
-          
+
           <Box sx={{ display: 'flex', gap: 1, alignItems: 'center' }}>
-            <IconButton sx={{color}}>
+            {/*<IconButton sx={{color}}>
               <SearchIcon />
-            </IconButton>
-            
+            </IconButton>*/}
+
             <ConnectWalletButton />
 
             <IconButton sx={{color, display: {xs: 'block', md: 'none'}}}>
